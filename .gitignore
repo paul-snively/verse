@@ -1,3 +1,4 @@
-.CoqMakefile.d
-CoqMakefile.conf
 Makefile.coq
+.Makefile.coq.d
+Makefile.coq.conf
+
