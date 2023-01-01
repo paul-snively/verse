@@ -1,1 +1,3 @@
--Q . submodules/strategies
+-R submodules/strategies/main Zoo
+-R src Verse
+src/Verse.v
