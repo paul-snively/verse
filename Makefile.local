@@ -1,4 +1,4 @@
 submodules: FORCE
-	$(foreach module,$(wildcard submodules/*), make -C $(module))
+	$(foreach module,$(wildcard submodules/*), $(MAKE) -C $(module))
 FORCE:
 
