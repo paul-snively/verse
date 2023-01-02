@@ -1,1 +1,6 @@
-.Makefile.d
+.CoqMakefile.d
+CoqMakefile.conf
+Makefile.coq
+**/*.aux
+**/*.glob
+
