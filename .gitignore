@@ -3,4 +3,7 @@ CoqMakefile.conf
 Makefile.coq
 **/*.aux
 **/*.glob
+**/*.vo
+**/*.vok
+**/*.vos
 
