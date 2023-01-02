@@ -6,7 +6,7 @@
 all: Makefile.coq
 	+make -f Makefile.coq all
 
-clean: Makefile.coq
+clean:: Makefile.coq
 	+make -f Makefile.coq clean
 	rm -f Makefile.coq
 
