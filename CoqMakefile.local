@@ -3,7 +3,7 @@ SHELL = /bin/bash
 .PHONY: pre-all clean
 
 pre-all::
-	(pushd submodules/strategies && coq_makefile COQFLAGS = '-q -w -overriding-logical-loadpath' -f _CoqProject -R main Zoo -o Makefile && make && popd)
+	(pushd submodules/strategies && coq_makefile -arg '-w' -arg '-overriding-logical-loadpath' -f _CoqProject -R main Zoo -o Makefile && make && popd)
 
 clean::
 	$(foreach module,$(wildcard submodules/*),$(MAKE) -C $(module) clean)
