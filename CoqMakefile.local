@@ -1,9 +1,17 @@
 SHELL = /bin/bash
 
+define newline
+
+
+endef
+
 .PHONY: pre-all clean
 
 pre-all::
 	(pushd submodules/strategies && coq_makefile -arg '-w' -arg '-overriding-logical-loadpath' -f _CoqProject -R main Zoo -o Makefile && make && popd)
+	(pushd submodules/vellvm/src && make opam && make && popd)
 
 clean::
-	$(foreach module,$(wildcard submodules/*),$(MAKE) -C $(module) clean)
+	(pushd submodules/strategies && make clean && popd)
+	(pushd submodules/vellvm/src && make clean && popd)
+

@@ -1,3 +1,6 @@
 [submodule "submodules/strategies"]
 	path = submodules/strategies
 	url = https://bitbucket.org/pl-uwr/strategies/commits/8581c8f9edbf499bd4e5705a748d28dcc5578483
+[submodule "submodules/vellvm"]
+	path = submodules/vellvm
+	url = git@github.com:vellvm/vellvm.git
