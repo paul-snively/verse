@@ -6,4 +6,4 @@ Makefile.coq
 **/*.vo
 **/*.vok
 **/*.vos
-
+.vscode
