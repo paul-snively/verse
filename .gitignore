@@ -7,3 +7,5 @@ Makefile.coq
 **/*.vok
 **/*.vos
 .vscode
+package-lock.json
+**/node_modules
