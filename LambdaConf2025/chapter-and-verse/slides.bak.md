@@ -5,12 +5,12 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: "Chapter and Verse: An Outsider's Overview of Epic Games' New Language"
+title: Welcome to Slidev
 info: |
-  ## Chapter and Verse
-  An Outsider's Overview of Epic Games' New Language
+  ## Slidev Starter Template
+  Presentation slides for developers.
 
-  Learn more at [Epic's site](https://dev.epicgames.com/documentation/en-us/uefn/verse-language-reference)
+  Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -22,9 +22,9 @@ transition: slide-left
 mdc: true
 ---
 
-# Chapter and Verse
+# Welcome to Slidev
 
-An Outsider’s Overview of Epic Games’ New Language
+Presentation slides for developers
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
   Press Space for next page <carbon:arrow-right />
@@ -42,86 +42,6 @@ An Outsider’s Overview of Epic Games’ New Language
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
-
----
-transition: slide-left
----
-<Tweet id='1311775040795484170'/>
-
----
-transition: slide-left
----
-<Tweet id='1210260682605764611'/>
-
----
-transition: slide-left
----
-<Tweet id='1624203398374367233'/>
-
----
-transition: slide-left
----
-<Tweet id='1348340804042043394'/>
-
----
-transition: slide-left
----
-<Tweet id='1348407317520384000'/>
-
----
-transition: slide-left
----
-<Tweet id='1348359132999372800'/>
-
----
-transition: slide-left
----
-<Tweet id='1133576009117261826'/>
-
----
-transition: slide-left
----
-<Tweet id='1652022144358858788'/>
-
----
-transition: slide-left
----
-<Tweet id='1231411672105046017'/>
-
----
-transition: slide-left
----
-<Tweet id='1243979979265904640'/>
-
----
-transition: slide-left
----
-<Tweet id='1472633455993409541'/>
-
----
-transition: slide-left
----
-<Tweet id='866763682461700097'/>
-
----
-transition: slide-left
----
-<Tweet id='1624573514387795968'/>
-
----
-transition: slide-left
----
-<Tweet id='1664647031581732865'/>
-
----
-transition: slide-left
----
-<Tweet id='1664647592146345984'/>
-
----
-transition: slide-left
----
-<Tweet id='1664647921231437824'/>
 
 ---
 transition: fade-out

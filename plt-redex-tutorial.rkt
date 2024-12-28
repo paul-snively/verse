@@ -92,8 +92,12 @@
   [---------------------
    (types (x : t Γ) x t)]
  
-  [(types Γ x_1 t_1)
-   (side-condition (different x_1 x_2))
+;  [(types Γ x_1 t_1)
+;   (side-condition (different x_1 x_2))
+;   ------------------------------------
+;   (types (x_2 : t_2 Γ) x_1 t_1)]
+
+[(types Γ x_1 t_1)
    ------------------------------------
    (types (x_2 : t_2 Γ) x_1 t_1)]
  
@@ -112,11 +116,21 @@
  
   [(types Γ e num) ...
    --------------------------
-   (types Γ (amb e ...) num)])
+   (types Γ (amb e ...) num)]
+)
 
+; Typing example
 (judgment-holds
    (types ·
           ((λ (x num) (amb x 1))
            (+ 1 2))
+          t)
+   t)
+
+; Exercise 5
+(judgment-holds
+   (types ·
+          ((λ (x num) (if0 x 1 (e_1 e_2)))
+           5)
           t)
    t)
