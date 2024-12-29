@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Verse</string>
+    <key>settings</key>
+    <array>
+      
+      <!-- Syntax error -->
+
+      <dict>
+        <key>scope</key>
+        <string>invalid.verse</string>
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>string</string>
+        </dict>
+      </dict>
+
+      <!-- Default -->
+      
+      <dict>
+        <key>scope</key>
+        <string>source.verse</string> <!-- Anything not otherwise styled -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>operator</string>
+        </dict>
+      </dict>
+
+      <!-- Comments -->
+      
+      <dict>
+        <key>scope</key>
+        <string>comment.verse,comment.block.verse,comment.line.verse</string> <!-- Line and block comments -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>comment</string>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>scope</key>
+        <string>comment.block.documentation.verse</string> <!-- Documentation comments -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>comment</string>
+        </dict>
+      </dict>
+      
+      <!-- Constants -->
+      
+      <dict>
+        <key>scope</key>
+        <string>constant.numeric</string> <!-- Numbers -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>number</string>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>scope</key>
+        <string>keyword.other.unit</string> <!-- Numeric units -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>number</string>
+        </dict>
+      </dict>
+      
+      <!-- Strings and Characters -->
+      
+      <dict>
+        <key>scope</key>
+        <string>string.quoted.single.verse,string.quoted.double.verse</string> <!-- Strings and characters -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>string</string>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>scope</key>
+        <string>constant.character.escape.verse</string> <!-- Backslashed escape sequences and interpolation -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>string - escape character</string>
+        </dict>
+      </dict>
+      
+      <!-- Markup -->
+      
+      <dict>
+        <key>scope</key>
+        <string>text.verse</string> <!-- Markup text -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>XML text</string>
+        </dict>
+      </dict>
+      
+      <!-- Names -->
+
+      <dict>
+        <key>scope</key>
+        <string>variable.verse</string> <!-- A referenced identifier -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>identifier</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>scope</key>
+        <string>entity.name.function.verse</string> <!-- A declared identifier -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>keyword</string>
+        </dict>
+      </dict>
+      
+      <dict>
+        <key>scope</key>
+        <string>entity.name.tag.verse</string> <!-- A referenced markup tag identifier -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>xml literal - name</string>
+        </dict>
+      </dict>
+      
+      <!-- Operator -->
+      
+      <dict>
+        <key>scope</key>
+        <string>keyword.operator</string> <!-- A prefix or infix operator -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>operator</string>
+        </dict>
+      </dict>
+
+      <!-- Punctuation -->
+      
+      <dict>
+        <key>scope</key>
+        <string>keyword.declaration.verse</string> <!-- Punctuation delimiting definitions, lists, escapes: '=' ':' '!' ',' ';' '&' -->
+        <key>settings</key>
+        <dict>
+          <key>vsclassificationtype</key>
+          <string>HTML Tag Delimiter</string>
+        </dict>
+      </dict>
+      
+    </array>
+  </dict>
+</plist>
