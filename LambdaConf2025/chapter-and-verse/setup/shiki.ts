@@ -1,15 +1,20 @@
 /* ./setup/shiki.ts */
 import { defineShikiSetup } from '@slidev/types'
 import epicVerse from './verse.json'
+import iconLang from './language-icon.tmLanguage.json'
+import curry from './curry.tmLanguage.json'
 import epicVerseDarkTheme from './verse-dark.tmTheme.json'
 
 export default defineShikiSetup(() => {
   return {
     themes: {
-      dark: epicVerseDarkTheme
+      dark: epicVerseDarkTheme,
+      light: 'min-light',
     },
     langs: [
       epicVerse,
+      iconLang,
+      curry,
       'abap',
       'actionscript-3',
       'ada',

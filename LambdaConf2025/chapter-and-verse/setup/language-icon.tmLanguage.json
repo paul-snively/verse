@@ -1,0 +1,213 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"fileTypes": [
+    "icn"
+  ],
+  "name": "Icon",
+  "scopeName": "source.icon",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "match": "(\\&allocated|\\&ascii|\\&clock|\\&collections|\\&cset|\\&current|\\&date|\\&dateline|\\&digits|\\&dump|\\&e|\\&error|\\&errornumber|\\&errortext|\\&errorvalue|\\&errout|\\&fail|\\&features|\\&file|\\&host|\\&input|\\&lcase|\\&letters|\\&level|\\&line|\\&main|\\&null|\\&output|\\&phi|\\&pi|\\&pos|\\&progname|\\&random|\\&regions|\\&source|\\&storage|\\&subject|\\&time|\\&trace|\\&ucase|\\&version)\\b",
+      "name": "support.constant.icon"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "match": "\\b(global)\\s+(.*?(?![^;#\\n]))",
+      "captures": {
+        "1": {
+          "name": "keyword.control.global.icon"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "#otherVariableList"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "match": "\\b(external)\\s+(.*?(?![^;#\\n]))",
+      "captures": {
+        "1": {
+          "name": "keyword.control.external.icon"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "#otherVariableList"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "begin": "\\b(record)\\s+([_a-zA-Z]\\w*)",
+      "end": "\\)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.record.icon"
+        },
+        "2": {
+          "name": "entity.name.type.record-name.icon"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "puncuation.definition.record-field-end.icon"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#comment"
+        },
+        {
+          "match": "(?<=(,|\\())\\s*([_a-zA-Z]\\w*)",
+          "captures": {
+            "2": {
+              "name": "entity.other.attribute-name.record-field.icon"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "begin": "(?<!\\\\)'",
+      "end": "'",
+      "name": "string.quoted.single.icon",
+      "patterns": [
+        {
+          "match": "\\\\[bdeflnrtv\\\\'\"]",
+          "name": "constant.character.escape.icon"
+        },
+        {
+          "match": "\\\\x?[0-9a-fA-F]+",
+          "name": "constant.character.escape.icon"
+        },
+        {
+          "match": "\\\\\\^[^'\\\\]",
+          "name": "constant.character.escape.icon"
+        }
+      ]
+    },
+    {
+      "begin": "(?<!\\\\)\"",
+      "end": "\"",
+      "name": "string.quoted.double.icon",
+      "patterns": [
+        {
+          "match": "\\\\[bdeflnrtv\\\\'\"]",
+          "name": "constant.character.escape.icon"
+        },
+        {
+          "match": "\\\\x?[0-9a-fA-F]+",
+          "name": "constant.character.escape.icon"
+        },
+        {
+          "match": "\\\\\\^[^\"\\\\]",
+          "name": "constant.character.escape.icon"
+        }
+      ]
+    },
+    {
+      "match": "\\b(break|do|global|local|record|then|by|else|if|next|repeat|to|case|end|initial|not|return|until|every|invocable|of|static|while|link|procedure|suspend)\\b",
+      "name": "keyword.control.icon"
+    },
+    {
+      "match": "\\b(create|default|fail)\\b",
+      "name": "constant.language.icon"
+    },
+    {
+      "match": "\\b(null|string|co-expression|table|integer|cset|procedure|set|real|file|list)\\b",
+      "name": "support.type.icon"
+    },
+    {
+      "match": "\\b(abs|acos|any|args|asin|atan|bal|center|char|chdir|close|collect|copy|cos|cset|delay|delete|detab|display|dtor|entab|errorclear|exit|exp|find|flush|function|get|getch|getche|getenv|iand|icom|image|insert|integer|ior|ishift|ixor|kbhit|key|left|list|loadfunc|log|many|map|match|member|move|name|numeric|open|ord|pop|pos|proc|pull|push|put|read|reads|real|remove|rename|repl|reverse|right|rtod|runerr|seek|seq|serial|set|sin|sort|sortf|sqrt|stop|string|system|tab|table|tan|trim|type|upto|variable|where|write|writes)\\b",
+      "name": "support.function.icon"
+    },
+    {
+      "match": "\\b([_a-zA-Z]\\w*)\\s*\\(",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.icon"
+        }
+      }
+    },
+    {
+      "match": "(?<=\\.)\\b[_a-zA-Z]\\w*\\b",
+      "name": "entity.other.attribute-name.icon"
+    },
+    {
+      "match": "\\b[_a-zA-Z]\\w*\\b",
+      "name": "variable.other.icon"
+    }
+  ],
+  "repository": {
+    "otherVariableList": {
+      "match": "\\s*([_a-zA-Z]\\w*)(.*)",
+      "captures": {
+        "1": {
+          "name": "variable.other.icon"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "#nextOtherVariable"
+            }
+          ]
+        }
+      }
+    },
+    "nextOtherVariable": {
+      "match": "(?<=,)\\s*([_a-zA-Z]\\w*)(.*)",
+      "captures": {
+        "1": {
+          "name": "variable.other.icon"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "#nextOtherVariable"
+            }
+          ]
+        }
+      }
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "\\b\\d+\\b",
+          "name": "constant.numeric.integer.icon"
+        },
+        {
+          "match": "\\b\\d+[Rr][\\da-zA-Z]+\\b",
+          "name": "constant.numeric.integer-with-base.icon"
+        },
+        {
+          "match": "\\b\\d*\\.\\d*\\b",
+          "name": "constant.numeric.real.icon"
+        },
+        {
+          "match": "\\b\\d+[Ee][\\+-]?\\d*\\b",
+          "name": "constant.numeric.real-exp.icon"
+        }
+      ]
+    },
+    "operators": {
+      "match": "\\bnot\\b|\\+|\\-|\\~|\\=|\\@|\\^|\\*|\\?|\\!|\\\\|\\/|\\.|\\%|\\||\\&|\\<|\\>|\\:",
+      "name": "keyword.operator.icon"
+    },
+    "comment": {
+      "match": "#.*$",
+      "name": "comment.line.number-sign.icon"
+    }
+  }
+}
