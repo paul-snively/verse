@@ -4,12 +4,13 @@ import epicVerse from './verse.json'
 import iconLang from './language-icon.tmLanguage.json'
 import curry from './curry.tmLanguage.json'
 import epicVerseDarkTheme from './verse-dark.tmTheme.json'
+import epicVerseLightTheme from './verse.tmTheme.json'
 
 export default defineShikiSetup(() => {
   return {
     themes: {
       dark: epicVerseDarkTheme,
-      light: 'min-light',
+      light: epicVerseLightTheme,
     },
     langs: [
       epicVerse,
