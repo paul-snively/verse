@@ -46,6 +46,42 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 transition: slide-left
 ---
+
+# About Me
+
+* Two-time former game developer
+* Never with Epic Games
+* Long time (decades) PLT fan
+* Followed Tim Sweeney's career for most of those decades
+* Interpretations and errors are my responsibility
+
+---
+transition: slide-left
+---
+
+# Verse in Epic Games’ Own Words
+
+* **Simple** enough to learn as a first-time programmer.
+* **General** enough for writing any kind of code and data.
+* **Productive** in the context of building, iterating, and shipping a project in a team setting, and integrating code and content.
+* **Statically verified** to catch as many categories of runtime problems as possible at compile time.
+* **Performant** for writing real-time, open-world, multiplayer games.
+* **Complete** so that every feature of the language supports programmer abstraction over that feature.
+* **Timeless** — built for the needs of today, and for foreseeable future needs, without being rooted in the past artifacts of other languages.
+
+---
+transition: slide-left
+---
+```Icon
+while a := read() do write(a)
+```
+
+<!--
+Example Icon code slide
+-->
+---
+transition: slide-left
+---
 <Tweet id='1311775040795484170'/>
 
 ---
