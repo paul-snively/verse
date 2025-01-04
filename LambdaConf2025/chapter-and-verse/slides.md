@@ -60,6 +60,12 @@ transition: slide-left
 * Interpretations and errors are my responsibility
 
 ---
+layout: center
+---
+
+<AutoFitText modelValue='Syntax'/>
+
+---
 layout: iframe
 url: https://www.seas.upenn.edu/~sweirich/types/archive/1999-2003/msg01135.html
 ---
@@ -68,7 +74,7 @@ url: https://www.seas.upenn.edu/~sweirich/types/archive/1999-2003/msg01135.html
 layout: end
 ---
 
-Q & A
+<AutoFitText modelValue='Q & A'/>
 
 ---
 transition: slide-left
@@ -166,7 +172,7 @@ layout: center
 transition: slide-left
 ---
 <Tweet id='866763682461700097'/>
-
+<img src='/DAdczDMXkAQRzCx.jpeg'/>
 ---
 layout: center
 transition: slide-left
