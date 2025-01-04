@@ -94,82 +94,99 @@ while a := read() do write(a)
 <!--
 Example Icon code slide
 -->
+
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1311775040795484170'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1210260682605764611'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1624203398374367233'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1348340804042043394'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1348407317520384000'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1348359132999372800'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1133576009117261826'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1652022144358858788'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1231411672105046017'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1243979979265904640'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1472633455993409541'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='866763682461700097'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1624573514387795968'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1664647031581732865'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1664647592146345984'/>
 
 ---
+layout: center
 transition: slide-left
 ---
 <Tweet id='1664647921231437824'/>
