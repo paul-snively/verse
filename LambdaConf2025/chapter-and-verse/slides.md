@@ -20,6 +20,10 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+
+fonts:
+  mono: Monaspace Xenon
+  local: Monaspace Xenon
 ---
 
 # Chapter and Verse
@@ -54,6 +58,17 @@ transition: slide-left
 * Long time (decades) PLT fan
 * Followed Tim Sweeney's career for most of those decades
 * Interpretations and errors are my responsibility
+
+---
+layout: iframe
+url: https://www.seas.upenn.edu/~sweirich/types/archive/1999-2003/msg01135.html
+---
+
+---
+layout: end
+---
+
+Q & A
 
 ---
 transition: slide-left
