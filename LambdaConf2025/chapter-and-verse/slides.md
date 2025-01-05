@@ -93,6 +93,38 @@ layout: center
 <AutoFitText modelValue='Syntax'/>
 
 ---
+layout: image-right
+image: https://images.unsplash.com/photo-1620434015857-1fe36766911d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+---
+
+#### Data
+
+````md magic-move
+```Verse
+X:int = 42
+```
+
+```Verse
+X := 42
+```
+````
+<br/>
+````md magic-move
+```Verse
+X:[]int = array{}{1, 2, 3}
+```
+
+```Verse
+X := array{1, 2, 3}
+```
+````
+
+<!--
+Variables are uppercase and types are lowercase by convention.
+Anyone notice anything funny about the `Data` examples?
+-->
+
+---
 layout: center
 ---
 
