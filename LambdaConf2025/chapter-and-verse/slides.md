@@ -3,7 +3,8 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+# background: https://cover.sli.dev
+background: https://images.unsplash.com/photo-1473755504818-b72b6dfdc226?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 # some information about your slides (markdown enabled)
 title: "Chapter and Verse: An Outsider's Overview of Epic Games' New Language"
 info: |
@@ -56,25 +57,20 @@ transition: slide-left
 * Two-time former game developer
 * Never with Epic Games
 * Long time (decades) PLT fan
-* Followed Tim Sweeney's career for most of those decades
+* Followed Tim Sweeney’s career for most of those decades
 * Interpretations and errors are my responsibility
 
 ---
 layout: center
+transition: slide-left
 ---
+# This presentation’s structure
+<Tweet id='1311775040795484170'/>
 
-<AutoFitText modelValue='Syntax'/>
-
----
-layout: iframe
-url: https://www.seas.upenn.edu/~sweirich/types/archive/1999-2003/msg01135.html
----
-
----
-layout: end
----
-
-<AutoFitText modelValue='Q & A'/>
+<!--
+The design of Verse is a two-decade problem, so all I can hope to do here is skip a stone across
+the pond, and hope the whirlpools take you in interesting directions.
+-->
 
 ---
 transition: slide-left
@@ -91,6 +87,36 @@ transition: slide-left
 * **Timeless** — built for the needs of today, and for foreseeable future needs, without being rooted in the past artifacts of other languages.
 
 ---
+layout: center
+---
+
+<AutoFitText modelValue='Syntax'/>
+
+---
+layout: center
+---
+
+<AutoFitText modelValue='Semantics'/>
+
+---
+layout: center
+---
+
+<AutoFitText modelValue='Types'/>
+
+---
+layout: iframe
+url: https://www.seas.upenn.edu/~sweirich/types/archive/1999-2003/msg01135.html
+---
+
+---
+layout: end
+---
+
+# Q & A
+
+
+---
 transition: slide-left
 ---
 ```Icon
@@ -101,11 +127,6 @@ while a := read() do write(a)
 Example Icon code slide
 -->
 
----
-layout: center
-transition: slide-left
----
-<Tweet id='1311775040795484170'/>
 
 ---
 layout: center
